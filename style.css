@@ -1,37 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: Vazir;
     direction: rtl;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     margin: 1.6rem 0;
 }
 
-.box1,.box2{
+.box1,
+.box2 {
     display: flex;
     align-items: center;
 }
-.box1 a img{
+
+.box1 a img {
     width: 50px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.header{
+
+p {
+    color: #858585;
+}
+
+.header {
     font-size: 13px;
 }
-.box1 a{
+
+.box1 a {
     margin: 0 5px;
 }
-.box2 a{
+
+.box2 a {
     margin: 0 2rem;
 }
+
 .box2 a:last-child {
     background-color: #107abe;
     color: white;
@@ -40,9 +53,10 @@ a{
     line-height: 30px;
     border-radius: 5px;
     text-align: center;
-    margin-right:-9px !important;
+    margin-right: -9px !important;
 }
-nav{
+
+nav {
     background-color: #107abe;
     position: sticky;
     top: 0;
@@ -50,39 +64,53 @@ nav{
     line-height: 50px;
     white-space: nowrap;
 }
-ul{
-   display: inline-block;
+
+ul {
+    display: inline-block;
+    margin: 0 5%;
 }
-ul li{
+
+ul li {
     display: inline-block;
     padding: 0 5px;
 }
-li a{
-    color: hsla(0,0%,100%,.64);
+
+li a {
+    color: hsla(0, 0%, 100%, .64);
     font-size: 12px;
     transition: color 0.2s;
 }
-.link-white{
+
+.link-white {
     color: white;
 }
-li a:hover{
+
+li a:hover {
     color: white;
 }
-.container{
+
+.backcolor {
+    background-color: #f5f5f5;
+}
+
+.container {
     width: 1000px;
-    margin: auto;   
+    margin: auto;
     max-width: 100%;
 }
-.title-top{
+
+.title-top {
     color: #5b5b5b;
     font-size: .8rem;
     margin-top: 2rem;
     margin-bottom: -3%;
     padding: 1rem;
 }
-.parent{
+
+.parent {
     overflow: auto;
 }
+
 .section {
     width: 100%;
     height: 670px;
@@ -173,97 +201,239 @@ a.link {
 }
 
 .info a {
-    color: white;
     text-decoration: none;
     font-size: 12px;
+    color: white;
 }
-.info h5{
+
+.info h5 {
     font-weight: 400;
     font-size: 13px;
 }
-.boxex{
+
+.boxex {
     background-image: url(img/typewriter.png);
     background-repeat: no-repeat;
     background-color: #bfe8ff;
     height: 300px;
     background-size: 315px;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 3rem;
 }
-.text span{
+
+.text span {
     font-size: 1.5rem;
     font-weight: 600;
 }
-.caption-boxex{
+
+.caption-boxex {
     font-size: 0.9rem !important;
     margin: 2rem 0;
 }
-.btn-group{
+
+.btn-group {
     font-size: .9rem;
 }
-.btn-group .btn-start{
-        background-color: #107abe;
-        color: white;
-        padding: 5px 0.8em;
-        border-radius: 4px;
-        margin: 0 2px;
-        transition: .1s;
+
+.btn-group .btn-start {
+    background-color: #107abe;
+    color: white;
+    padding: 5px 0.8em;
+    border-radius: 4px;
+    margin: 0 2px;
+    transition: .1s;
 }
-.btn-group .btn-start:hover{
+
+.btn-group .btn-start:hover {
     background-color: #0d4d76;
 }
-.btn-group .btn-info{
-        border: 1px solid #5b5b5b;
-        padding: 4px .7rem;
-        border-radius: 3px;
-        color: #5b5b5b;
-        transition: .1s;
+
+.btn-group .btn-info {
+    border: 1px solid #5b5b5b;
+    padding: 4px .7rem;
+    border-radius: 3px;
+    color: #5b5b5b;
+    transition: .1s;
 }
-.btn-group .btn-info:hover{
+
+.btn-group .btn-info:hover {
     color: black;
 }
-@media screen and (max-width: 992px) {
-    .header{
-        /* margin: 1.6rem 0; */
-    }
-    .parent{
-        margin-right:.8rem;
-    }
-    .section{
-        display: flex;
-        width: 345%;
-        height: auto;
-    }
-    .section>div{
-        height: 300px;
-        width: 100% !important;
-    }
-    .post img{
-        height: 100% !important;
-        object-fit: cover;
-    }
-    .text span{
-        font-size: 1.1rem;
-    }
-    .boxex{
-        margin: 2rem .8rem;
-    }
+section.container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 2rem;
 }
-@media screen and (max-width:768px) {
-    nav{
-        overflow-x: auto;
-    }
+
+.post-box {
+    background-color: white;
 }
-@media screen and (max-width:700px) {
-    .boxex{
-        background-image: none;
-        height: 255px;
-    }
-    .text{
-        width: auto;
-    }
+
+.box {
+    background-color: white;
+    /* height: 465px; */
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.img-post {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.user-box {
+    display: flex;
+    padding: 8px 0;
+}
+
+.user-box img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.detels {
+    padding: 1rem 1.5rem;
+}
+
+.info-box {
+    margin: 0 1rem;
+}
+
+.info-box a {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.info-box h5 {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .44);
+    margin: 0.3rem 0;
+}
+
+.post-box h2 {
+    margin: 1rem 0;
+    ;
+}
+
+.post-box p {
+    margin: 1rem 0;
+    ;
+}
+
+.icon-post {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #858585;
+    margin: 1.5rem 0;
+}
+
+i.far.fa-heart {
+    display: flex;
+    align-items: center;
+}
+
+.icon-post span {
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+#part-one {
+    width: 300px;
+}
+
+.part-one h4, p {
+    margin: 1rem 0;
+}
+
+.part-one p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+button {
+    background: #107abe;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Vazir';
+}
+
+i.fas.fa-chevron-left {
+    margin: 0 0.6rem;
+    font-size: 0.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.li-two {
+    display: flex;
+    margin: 0.8rem 0;
+}
+
+.image-box img {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.link-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.7rem;
+    text-decoration: none;
+}
+
+.link-info a {
+    text-decoration: none;
+}
+
+.part-two h2 {
+    margin: 1rem 0;
+}
+
+.title-link {
+    color: black;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.user-link {
+    margin: 0.5rem 0;
+    color: #5b5b5b;
+    font-size: 0.8rem;
+}
+
+.part-there ul {
+    display: flex;
+}
+
+.part-there ul li {
+    margin-top: 2.7rem;
+    margin-right: 0.5rem;
+}
+
+.part-there ul li a {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.Enamad img {
+    margin-right: 1rem;
 }
