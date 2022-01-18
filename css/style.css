@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Vazir;
+    direction: rtl;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.6rem 0;
+}
+
+.box1,
+.box2 {
+    display: flex;
+    align-items: center;
+}
+
+.box1 a img {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #858585;
+}
+
+.header {
+    font-size: 13px;
+}
+
+.box1 a {
+    margin: 0 5px;
+}
+
+.box2 a {
+    margin: 0 2rem;
+}
+
+.box2 a:last-child {
+    background-color: #107abe;
+    color: white;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: -9px !important;
+}
+
+nav {
+    background-color: #107abe;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+ul {
+    display: inline-block;
+    margin: 0 5%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+li a {
+    color: hsla(0, 0%, 100%, .64);
+    font-size: 12px;
+    transition: color 0.2s;
+}
+
+.link-white {
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+.backcolor {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.title-top {
+    color: #5b5b5b;
+    font-size: .8rem;
+    margin-top: 2rem;
+    margin-bottom: -3%;
+    padding: 1rem;
+}
+
+.parent {
+    overflow: auto;
+}
+
+.section {
+    width: 100%;
+    height: 670px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 2rem 0;
+    gap: 0 1rem;
+}
+
+.section>div {
+    overflow: hidden;
+    position: relative;
+}
+
+a.post {
+    position: relative;
+    display: block;
+}
+
+a.post::before {
+    content: "";
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.section .post img {
+    border-radius: 4px;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.item-1 {
+    grid-column: 1/4;
+}
+
+.item-2 {
+    grid-column: 4/6;
+}
+
+.item-3 {
+    grid-column: 1/3;
+}
+
+.item-4 {
+    grid-column: 3/6;
+}
+
+.caption {
+    position: absolute;
+    top: 44%;
+    width: 91%;
+    padding: 2rem;
+}
+
+.item-4 .caption,
+.item-3 .caption {
+    top: 51%;
+}
+
+a.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.user {
+    display: flex;
+    padding: 8px 0;
+}
+
+.user img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 0px 10px;
+    line-height: 24px;
+    color: white;
+}
+
+.info a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+
+.info h5 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.boxex {
+    background-image: url(img/typewriter.png);
+    background-repeat: no-repeat;
+    background-color: #bfe8ff;
+    height: 300px;
+    background-size: 315px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 3rem;
+}
+
+.text span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.caption-boxex {
+    font-size: 0.9rem !important;
+    margin: 2rem 0;
+}
+
+.btn-group {
+    font-size: .9rem;
+}
+
+.btn-group .btn-start {
+    background-color: #107abe;
+    color: white;
+    padding: 5px 0.8em;
+    border-radius: 4px;
+    margin: 0 2px;
+    transition: .1s;
+}
+
+.btn-group .btn-start:hover {
+    background-color: #0d4d76;
+}
+
+.btn-group .btn-info {
+    border: 1px solid #5b5b5b;
+    padding: 4px .7rem;
+    border-radius: 3px;
+    color: #5b5b5b;
+    transition: .1s;
+}
+
+.btn-group .btn-info:hover {
+    color: black;
+}
+section.container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    column-gap: 2rem;
+}
+
+.post-box {
+    background-color: white;
+}
+
+.box {
+    background-color: white;
+    /* height: 465px; */
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.img-post {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.user-box {
+    display: flex;
+    padding: 8px 0;
+}
+
+.user-box img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.detels {
+    padding: 1rem 1.5rem;
+}
+
+.info-box {
+    margin: 0 1rem;
+}
+
+.info-box a {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.info-box h5 {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .44);
+    margin: 0.3rem 0;
+}
+
+.post-box h2 {
+    margin: 1rem 0;
+    ;
+}
+
+.post-box p {
+    margin: 1rem 0;
+    ;
+}
+
+.icon-post {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #858585;
+    margin: 1.5rem 0;
+}
+
+i.far.fa-heart {
+    display: flex;
+    align-items: center;
+}
+
+.icon-post span {
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+#part-one {
+    width: 300px;
+}
+
+.part-one h4, p {
+    margin: 1rem 0;
+}
+
+.part-one p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+button {
+    background: #107abe;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Vazir';
+}
+
+i.fas.fa-chevron-left {
+    margin: 0 0.6rem;
+    font-size: 0.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.li-two {
+    display: flex;
+    margin: 0.8rem 0;
+}
+
+.image-box img {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.link-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.7rem;
+    text-decoration: none;
+}
+
+.link-info a {
+    text-decoration: none;
+}
+
+.part-two h2 {
+    margin: 1rem 0;
+}
+
+.title-link {
+    color: black;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.user-link {
+    margin: 0.5rem 0;
+    color: #5b5b5b;
+    font-size: 0.8rem;
+}
+
+.part-there ul {
+    display: flex;
+}
+
+.part-there ul li {
+    margin-top: 2.7rem;
+    margin-right: 0.5rem;
+}
+
+.part-there ul li a {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.Enamad img {
+    margin-right: 1rem;
+}
